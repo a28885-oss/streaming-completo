@@ -1,0 +1,128 @@
+.header {
+  background-color: #1a1a1a;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid #e50914;
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  gap: 30px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e50914;
+  text-decoration: none;
+  min-width: 150px;
+  transition: transform 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+  flex: 1;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s, border-bottom 0.3s;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: #e50914;
+  border-bottom: 2px solid #e50914;
+}
+
+.search-form {
+  display: flex;
+  gap: 10px;
+  min-width: 300px;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  background-color: #2a2a2a;
+  color: #fff;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.search-form input:focus {
+  outline: none;
+  border-color: #e50914;
+}
+
+.search-form button {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.search-form button:hover {
+  background-color: #c40812;
+}
+
+@media (max-width: 1024px) {
+  .header-container {
+    gap: 15px;
+  }
+
+  .search-form {
+    min-width: 200px;
+  }
+
+  .nav {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .logo {
+    font-size: 18px;
+    min-width: 100px;
+  }
+
+  .nav {
+    gap: 15px;
+    font-size: 14px;
+    flex-basis: 100%;
+    order: 3;
+  }
+
+  .search-form {
+    flex-basis: 100%;
+    order: 2;
+    min-width: auto;
+  }
+}

@@ -1,0 +1,35 @@
+.series {
+  width: 100%;
+}
+
+.series-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 60px 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.series-header h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.series-header p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .series-header {
+    padding: 40px 20px;
+  }
+
+  .series-header h1 {
+    font-size: 32px;
+  }
+
+  .series-header p {
+    font-size: 16px;
+  }
+}

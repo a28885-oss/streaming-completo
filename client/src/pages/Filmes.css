@@ -1,0 +1,35 @@
+.filmes {
+  width: 100%;
+}
+
+.filmes-header {
+  background: linear-gradient(135deg, #e50914 0%, #c40812 100%);
+  padding: 60px 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.filmes-header h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.filmes-header p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .filmes-header {
+    padding: 40px 20px;
+  }
+
+  .filmes-header h1 {
+    font-size: 32px;
+  }
+
+  .filmes-header p {
+    font-size: 16px;
+  }
+}
